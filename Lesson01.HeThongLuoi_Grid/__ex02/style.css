@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  /* grid-gap: 10px; */
+  margin: 20px;
+}
+
+.grid-item {
+  background-color: aquamarine;
+  font-size: 24px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.item1 {
+  background-color: #ccc;
+  grid-row: span 2;
+}
+
+.item3 {
+  /* grid-column: span 2;
+  grid-row: span 2; */
+  background-color: lightcoral; /* Màu nền khác để dễ phân biệt */
+}

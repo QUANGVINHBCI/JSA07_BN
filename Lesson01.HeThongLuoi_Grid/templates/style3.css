@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr; /* 1 phần sidebar, 3 phần content */
+  grid-template-rows: auto 1fr auto; /* Chiều cao tự động cho header và footer */
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
